@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BLOGS</title>
+</head>
+<body>
+    <h1 class="new">edit blog article</h1>
+    <form action="/updatepost" method="post">
+    <input type="text" name="blogtitle" placeholder="Enter your blog article here"  value="<%= post.bt %>">
+    <br>
+        <textarea name="blogdetails"  cols="60" rows="20" placeholder="Enter your blog " ><%= post.bd %></textarea>
+        <br><br>
+        <input type="hidden" name="id" value=<%= id %>>
+        <button type="submit" class="btn update" >UPDATE POST</button>
+    </form>
+
+    <script src="javascripts/index.js"></script>
+</body>
+</html>

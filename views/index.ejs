@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/356e6d1d48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>BLOGS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+                    <img src="images/KULMAN LOGO.PNG" alt="BRAND LOGO" class="brand">
+                    <button type="button"class="navbar-btn"><i class="fas fa-sliders-h fa-2x toogle-btn hidden"></i></button>
+                    <ul class="navbar">
+                        <li class="single-link"><a href="/home">Home</a></li>
+                        <li class="single-link"><a href="/about">About</a></li>
+                        <li class="single-link"><a href="/subscribe">Subscribe</a></li>
+                     <li class="single-link"><a href="/signup">Sign-up</a></li>
+                        <li class="single-link"><a href="/login">Login</a></li>
+                    </ul>
+        </div>
+        <div class="drop">
+            <ul class="block">
+                <li class="single-links"><a href="/home">Home</a></li>
+                <li class="single-links"><a href="/about">About</a></li>
+                <li class="single-links"><a href="/subscribe">Subscribe</a></li>
+                <li class="single-links"><a href="/signup">Sign-up</a></li>
+                <li class="single-links"><a href="/login">Login</a></li>
+            </ul>
+        </div>
+        <div class="blogs">
+                <% posts.forEach((post)=>{ %>
+                <div class="blog"id= <%= post._id %>><h1><%=  post.bt %></h1>
+                <p class="blogdetail"><%= post.bd %></p>
+                <div class="btns">
+                    <button type="button" class=" btn edit">
+                        EDIT POST
+                    </button>
+                    <button type="button" class=" btn delete">
+                        DELETE POST
+                    </button>
+                    <button type="button" class="btn read">READ MORE</button>
+                </div>
+                </div>
+                <% }); %>
+                <div class="newpostbtn">
+                    <button type="button" class=" btn newpost">NEW POST</button>
+                </div>
+            </div>
+        <footer class="foot">
+            <p>Made with <span><i class="fas fa-heart" style="color: rgba(143, 10, 76, 0.623);"></i></span> by vishi</p>
+                <a  href="#" class="social-link"><i class="fab fa-facebook-square fa-1.5x"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter fa-1.5x"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram fa-1.5x"></i></li>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+    <script src="javascripts/index.js"></script>
+</body>
+</html>

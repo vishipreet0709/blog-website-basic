@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/356e6d1d48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title><%= post.bt %></title>
+</head>
+<body>
+    <div class="header">
+        <img src="images/KULMAN LOGO.PNG" alt="BRAND LOGO" class="brand">
+        <button type="button"class="navbar-btn"><i class="fas fa-sliders-h fa-2x toogle-btn hidden"></i></button>
+        <ul class="navbar">
+            <li class="single-link"><a href="/">Home</a></li>
+            <li class="single-link"><a href="/about">About</a></li>
+            <li class="single-link"><a href="/subscribe">Subscribe</a></li>
+            <li class="single-link"><a href="/signup">Sign-up</a></li>
+            <li class="single-link"><a href="/login">Login</a></li>
+        </ul>
+    </div>
+    <div class="drop">
+        <ul class="block">
+            <li class="single-links"><a href="/home">Home</a></li>
+            <li class="single-links"><a href="/about">About</a></li>
+            <li class="single-links"><a href="/subscribe">Subscribe</a></li>
+            <li class="single-links"><a href="/signup">Sign-up</a></li>
+            <li class="single-links"><a href="/login">Login</a></li>
+        </ul>
+    </div>
+    <div class="singleblog">
+        <h1 ><%= post.bt %></h1>
+        <p><%= post.bd %></p>
+    </div>
+    
+    <script src="javascripts/indexab.js"></script>
+</body>
+</html>

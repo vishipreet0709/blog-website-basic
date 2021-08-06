@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background-color: #f6f6f6;
+    text-transform: capitalize;
+}
+
+/* footer */
+.foot{
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #faf2da;
+    color:#a6d6d6;
+}
+.foot p{
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.social-link{
+    font-size: 1rem;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* main */
+
+.blogs{
+    min-height: calc(100vh - 215px);
+    padding: 5%;
+    position: relative;
+}
+.blog h1{
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+.blog p{
+    margin-bottom: 20px;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.btn{
+    padding:  .5rem;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    box-shadow: 2px 2px #ededd0,-2px -2px #ededd0;
+    background-color: teal;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.newpostbtn{
+    position: absolute;
+    top: 4%;
+    right: 5%;
+}
+.newpost{
+    font-size: large;
+    margin: 0;
+}
+
+
+.new{
+    text-align: center;
+    color: #a6d6d6;
+    margin-top: 20px;
+}
+form{
+    padding: 3% 5%;
+
+}
+input[type="text"]{
+    padding: .5rem;
+    width: 80%;
+    outline: none;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+textarea{
+    padding: .5rem;
+    padding-top: 20px;
+    font-size: 20px;
+    width: 80%;
+    height: auto;
+    outline: none;
+    text-transform: capitalize;
+}
+
+/* blogs */
+
+.singleblog{
+  background-color: #f2dac3;
+    display: flex;
+    width: 60%;
+align-items: center;    
+margin: 0 auto;
+text-align: center;
+    flex-direction: column;
+    text-transform: capitalize;
+    box-shadow: 5px 4px #ededd0,-5px -4px #ededd0;
+    margin-top: 40px;
+}
+.singleblog h1{
+    margin-bottom: 40px;
+    margin-top: 30px;
+    color: #a6d6d6;
+}
+.singleblog p{
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.contactinput{
+    padding: .5rem;
+    width: 80%;
+}
+.contactform{
+    padding: 0;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.contactbtn{
+    margin-top: 10px;
+}
+
+/* success page */
+
+.main-container{
+    width: 100%;
+ 
+    background-color: rgba(173, 169, 169, 0.719);
+    border-radius: 10px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+.main-container h1
+{
+    font-size: 4rem;
+    padding: 10%;
+    color:rgba(0, 0, 0, 0.651);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.589);
+}
+.main-container p{
+    padding: 3rem;
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+.link{    
+    width:20%;
+   display: block;
+    margin: 30px auto;
+}
+.back{
+    padding: .5rem;
+    background-color: teal;
+    color: white;
+}
+.header{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #faf2da;
+    box-shadow: 0 3px 10px #ededd0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand{
+    display: inline-block;
+    margin:2% 4%;
+    width: 120px;
+    border-radius: 100%;
+}
+.navbar{
+    margin-right: 40px;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.single-link{
+    margin: 0 20px;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color:#a6d6d6;
+    font-weight: 500;
+}
+.hidden{
+    display: none;
+}
+.navbar-btn{
+    display: none;
+    margin-right: 29px;
+}
+.toogle-btn{
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: teal;
+    cursor: pointer;
+    padding:.5rem;
+}
+.single-links{
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: #334443;
+    border-bottom: 2px solid #a0937d;
+}
+.single-links:hover{
+    padding-left: 50px;
+    border-bottom: 7px solid #a0937d;
+}
+.drop{
+    transition: all 10s linear;
+    display: none;
+}
+.show{
+    
+    display: block;
+}
+@media  screen and (max-width: 750px){
+    .navbar{
+            display: none;
+    }
+    
+    .hidden{
+        display: block;
+    }
+    .navbar-btn{
+        display: block;
+    }
+    
+}
